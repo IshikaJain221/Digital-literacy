@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Chat | DigiBuddy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">DigiBuddy</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tutorial.html">Tutorials</a></li>
+          <li><a href="chatbot.html">AI Chat</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main style="padding:2rem;">
+    <div id="chat" class="chat-box"></div>
+    <input type="text" id="message" placeholder="Ask something..." />
+    <button onclick="sendMessage()">Send</button>
+  </main>
+
+  <script src="file.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhatsApp FAQs | DigiBuddy</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .faq-container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #fff0f6;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    .faq-item {
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+    .faq-question {
+      font-weight: bold;
+      background: #ffb6c1;
+      padding: 15px;
+      border-radius: 10px;
+      transition: background 0.3s;
+    }
+    .faq-question:hover {
+      background: #ff99b3;
+    }
+    .faq-answer {
+      display: none;
+      padding: 10px 15px;
+      background: #fff;
+      border-left: 4px solid #ff69b4;
+      border-radius: 0 0 10px 10px;
+    }
+    .back-button {
+      display: inline-block;
+      margin-bottom: 20px;
+      background-color: #ff69b4;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .back-button:hover {
+      background-color: #e0529f;
+    }
+  </style>
+  <script>
+    function toggleAnswer(index) {
+      const answer = document.getElementById(`answer-${index}`);
+      answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">DigiBuddy</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tutorial.html">Tutorials</a></li>
+          <li><a href="chatbot.html">AI Chat</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="faq-container">
+    <a href="tutorial.html" class="back-button">← Back to Tutorials</a>
+    <h2>📱 WhatsApp - Frequently Asked Questions</h2>
+
+    <!-- FAQ Items -->
+    <div class="faq-item" onclick="toggleAnswer(1)">
+      <div class="faq-question">1. How to download WhatsApp?</div>
+      <div class="faq-answer" id="answer-1">Go to Play Store (Android) or App Store (iPhone), search for "WhatsApp", and tap Install.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(2)">
+      <div class="faq-question">2. How to create a WhatsApp account?</div>
+      <div class="faq-answer" id="answer-2">Open WhatsApp, enter your phone number, verify it via SMS, then set your profile name and picture.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(3)">
+      <div class="faq-question">3. How to send a message?</div>
+      <div class="faq-answer" id="answer-3">Open a chat, type your message in the text box, and tap the send button (📤).</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(4)">
+      <div class="faq-question">4. How to make a voice call?</div>
+      <div class="faq-answer" id="answer-4">Open a chat and tap the phone icon (📞) at the top right corner.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(5)">
+      <div class="faq-question">5. How to make a video call?</div>
+      <div class="faq-answer" id="answer-5">Open a chat and tap the camera icon (📹) at the top right corner.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(6)">
+      <div class="faq-question">6. How to send a photo or video?</div>
+      <div class="faq-answer" id="answer-6">Tap the attachment (📎) icon, select Gallery or Camera, choose your media, and send it.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(7)">
+      <div class="faq-question">7. How to create a WhatsApp group?</div>
+      <div class="faq-answer" id="answer-7">Tap New Chat > New Group, select contacts, set group name, and tap Create.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(8)">
+      <div class="faq-question">8. How to leave a group?</div>
+      <div class="faq-answer" id="answer-8">Open the group > tap on group name > scroll and tap 'Exit Group'.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(9)">
+      <div class="faq-question">9. How to delete a message?</div>
+      <div class="faq-answer" id="answer-9">Long-press the message > tap trash icon > choose 'Delete for me' or 'Delete for everyone'.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(10)">
+      <div class="faq-question">10. How to change profile picture?</div>
+      <div class="faq-answer" id="answer-10">Go to Settings > Tap your profile > Tap the photo > Choose a new image.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(11)">
+      <div class="faq-question">11. How to check if someone read your message?</div>
+      <div class="faq-answer" id="answer-11">Look for blue check marks under the message, or long-press the message > tap 'Info'.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(12)">
+      <div class="faq-question">12. How to block someone?</div>
+      <div class="faq-answer" id="answer-12">Open the chat > tap three dots > More > Block.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(13)">
+      <div class="faq-question">13. How to enable WhatsApp Web?</div>
+      <div class="faq-answer" id="answer-13">Go to web.whatsapp.com > Open WhatsApp on your phone > tap Menu > WhatsApp Web > Scan QR Code.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(14)">
+      <div class="faq-question">14. How to update WhatsApp?</div>
+      <div class="faq-answer" id="answer-14">Go to Play Store/App Store > Search WhatsApp > Tap Update (if available).</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(15)">
+      <div class="faq-question">15. How to change the wallpaper in chats?</div>
+      <div class="faq-answer" id="answer-15">Open WhatsApp > Settings > Chats > Wallpaper > Choose wallpaper and set it.</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 DigiBuddy | Team CollegeTips.in</p>
+  </footer>
+</body>
+</html>

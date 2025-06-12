@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Google Maps FAQs | DigiBuddy</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .faq-container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      background: #fff0f6;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    .faq-item {
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+    .faq-question {
+      font-weight: bold;
+      background: #ffb6c1;
+      padding: 15px;
+      border-radius: 10px;
+      transition: background 0.3s;
+    }
+    .faq-question:hover {
+      background: #ff99b3;
+    }
+    .faq-answer {
+      display: none;
+      padding: 10px 15px;
+      background: #fff;
+      border-left: 4px solid #ff69b4;
+      border-radius: 0 0 10px 10px;
+    }
+    .back-btn {
+      display: inline-block;
+      margin: 20px;
+      padding: 10px 20px;
+      background-color: #ff69b4;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
+    }
+    .back-btn:hover {
+      background-color: #ff1493;
+    }
+  </style>
+  <script>
+    function toggleAnswer(index) {
+      const answer = document.getElementById(`answer-${index}`);
+      answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</head>
+<body>
+  <a class="back-btn" href="tutorial.html">← Back to Tutorials</a>
+  <section class="faq-container">
+    <h2>🗺 Google Maps - Frequently Asked Questions</h2>
+    <div class="faq-item" onclick="toggleAnswer(1)">
+      <div class="faq-question">1. How to install Google Maps?</div>
+      <div class="faq-answer" id="answer-1">Go to Play Store/App Store > Search Google Maps > Tap Install.</div>
+    </div>
+    <div class="faq-item" onclick="toggleAnswer(2)">
+      <div class="faq-question">2. How to search a location?</div>
+      <div class="faq-answer" id="answer-2">Open app > Type place name in search bar > Tap result.</div>
+    </div>
+    <div class="faq-item" onclick="toggleAnswer(3)">
+      <div class="faq-question">3. How to start navigation?</div>
+      <div class="faq-answer" id="answer-3">Search destination > Tap 'Directions' > Start.</div>
+    </div>
+    <div class="faq-item" onclick="toggleAnswer(4)">
+      <div class="faq-question">4. How to change transportation mode?</div>
+      <div class="faq-answer" id="answer-4">On directions screen, choose Car, Bus, Walk, or Bike icons.</div>
+    </div>
+    <div class="faq-item" onclick="toggleAnswer(5)">
+      <div class="faq-question">5. How to share location?</div>
+      <div class="faq-answer" id="answer-5">Tap blue dot > Share location > Choose contact or app.</div>
+    </div>
+    <div class="faq-item" onclick="toggleAnswer(6)">
+      <div class="faq-question">6. How to download offline maps?</div>
+      <div class="faq-answer" id="answer-6">Tap your profile > Offline maps > Select area > Download.</div>
+    </div>
+    <div class="faq-item" onclick="toggleAnswer(7)">
+      <div class="faq-question">7. How to check traffic?</div>
+      <div class="faq-answer" id="answer-7">Enable Traffic Layer from the layers menu in top-right corner.</div>
+    </div>
+    <div class="faq-item" onclick="toggleAnswer(8)">
+      <div class="faq-question">8. How to change map type?</div>
+      <div class="faq-answer" id="answer-8">Use Layers icon > Select Satellite, Terrain, etc.</div>
+    </div>
+    <div class="faq-item" onclick="toggleAnswer(9)">
+      <div class="faq-question">9. How to save favorite places?</div>
+      <div class="faq-answer" id="answer-9">Search a place > Tap 'Save' > Choose a list like Favorites.</div>
+    </div>
+    <div class="faq-item" onclick="toggleAnswer(10)">
+      <div class="faq-question">10. How to switch to Street View?</div>
+      <div class="faq-answer" id="answer-10">Drag yellow person icon to the map location to enter Street View.</div>
+    </div>
+  </section>
+</body>
+</html>
